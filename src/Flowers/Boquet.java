@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
  */
 class Boquet{
-    public int size;
+    public int size; 
     public ArrayList<Flower> flowers = new ArrayList<>();
     public Boquet(ArrayList<Flower> components) {
         for (Flower flows: components) {
