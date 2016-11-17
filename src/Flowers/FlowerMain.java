@@ -1,5 +1,9 @@
 package Flowers;
 
+import Flowers.enums.FlowerColour;
+import Flowers.parent.Flower;
+
+import java.util.ArrayList;
 import java.util.Arrays;
 
 /**
@@ -8,19 +12,23 @@ import java.util.Arrays;
 public class FlowerMain {
 
     public static void main(String args[]) {
+        ArrayList<Flower> flowers = new ArrayList<>(Arrays.asList(
+                new Cactus(20, 1, FlowerColour.GREEN, 13,true),
 
-        FlowerBucket bucket = new FlowerBucket();
-        Flower mak = new Flower(FlowerColor.BLACK, 12, true, 12.5, FlowerType.ROSA);
-        Flower romashka = new Flower(FlowerColor.GREEN, 12, true, 12, FlowerType.TULPAN);
+                new Cactus(20, 2, FlowerColour.GREEN, 12, false),
+                new Chamomille(15, 5, FlowerColour.RED, 20,20),
+                new Chamomille(15, 3, FlowerColour.PINK, 21,21)
 
-        FlowerSpec findFlower = new FlowerSpec(FlowerColor.GREEN, 12.0, FlowerType.TULPAN);
+        ));
+        Boquet myBouquet = new Boquet(flowers);
+        Cactus cact1 = new Cactus(20, 3, FlowerColour.GREEN, 12,false);
+        cact1.setSuitable(false);
+        myBouquet.addFlower(cact1);
+        System.out.println("Price " + myBouquet.getPrice());
+        System.out.println(myBouquet.getTheFreshest());
 
-        bucket.addFlower(mak);
-        bucket.addFlower(romashka);
-
-        System.out.println(bucket.getFlower(findFlower));
-        System.out.println(bucket.searchFlower(findFlower));
+        myBouquet.sortFlowers();
+        System.out.println(myBouquet.flowers);
     }
 }
-
 

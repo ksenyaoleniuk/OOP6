@@ -1,14 +1,17 @@
 package Flowers;
-
 /**
  * Created by matt on 10/3/16.
  */
+
+import Flowers.parent.Flower;
+import Flowers.parent.Item;
+import Flowers.parent.Specs;
 import java.util.ArrayList;
 
-public class FlowerBucket {
+public class FlowerBucket implements Item {
     private int defaultSize = 10;
 
-    private int insertIndex = 0; // insert, or better create method length()
+    private int insertIndex = 0; // insert, or better create method getLength()()
     private Flower[] a = new Flower[defaultSize];
 
     public void addFlower(Flower nw) {
@@ -45,6 +48,9 @@ public class FlowerBucket {
         }
         return s;
     }
+    public String getDescription() {
+        return toString();
+    }
 
     public double getTotalPrice() {
         double sum = 0;
@@ -56,45 +62,30 @@ public class FlowerBucket {
     public Flower[] selectFlowersByItsLength(double start, double end) {
         int tmpSize = 0;
         for (int i = 0; i < insertIndex; i++) {
-            if (a[i].getLength() <= end && a[i].getLength() >= start ) {
-                tmpSize ++;
+            if (a[i].getLenght() <= end && a[i].getLenght() >= start) {
+                tmpSize++;
             }
         }
         Flower[] tmpPart = new Flower[tmpSize];
         int tmpIndex = 0;
         for (int i = 0; i < insertIndex; i++) {
-            if (a[i].getLength() <= end && a[i].getLength() >= start ) {
+            if (a[i].getLenght() <= end && a[i].getLenght() >= start) {
                 tmpPart[tmpIndex] = a[i];
-                tmpIndex ++;
+                tmpIndex++;
             }
-        }
-        return tmpPart;
+        }return tmpPart;
     }
 
-    public ArrayList<Flower> getFlower(FlowerSpec type){
-
+    public Flower searchFlower(Flower flower){
         ArrayList<Flower> tmp = new ArrayList<Flower>();
         for (int i = 0; i < insertIndex; i++) {
+            if (a[i].getColour() != flower.getColour())
+                continue;
 
-                if (a[i].getType() == type.getType()){
-                    tmp.add(a[i]);}
+            if (a[i].getLenght() != flower.getLenght())
+                continue;
+                return a[i];
             }
-        return tmp;
-        }
-
-
-    public Flower searchFlower(FlowerSpec flower){
-
-//        ArrayList<Flower> tmp = new ArrayList<Flower>();
-        for (int i = 0; i < insertIndex; i++) {
-            if (a[i].getType() != flower.getType())
-                continue;
-            if (a[i].getColor() != flower.getColor())
-                continue;
-            if (a[i].getLength() != flower.getLength())
-                continue;
-            return a[i];
-        }
 
         return null;
     }
