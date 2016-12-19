@@ -34,7 +34,7 @@ public class FlowerBucket implements Item {
         for (int i = 1; i < insertIndex; i ++) {
             Flower tmp = a[i];
             int j = i - 1;
-            while (j >= 0 && (a[i].getPrice() < a[j].getPrice())) {
+            while (j >= 0 && (a[i].getTotalPrice() < a[j].getTotalPrice())) {
                 a[i] = a[j];
                 j --;
             }
@@ -56,7 +56,7 @@ public class FlowerBucket implements Item {
     public int price() {
         int sum = 0;
         for (int i = 0; i < insertIndex; i ++) {
-            sum += a[i].getPrice();
+            sum += a[i].getTotalPrice();
         }
         return sum;
     }

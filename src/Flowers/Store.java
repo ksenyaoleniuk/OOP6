@@ -13,9 +13,8 @@ public class Store {
         if (type.equals("Birthday")) {
             return new BirthdayBucket();
         }
-        if (type.equals("Funeral")){
-            return new FuneralBucket();
-        }
+
+
         return null;
         }
     }

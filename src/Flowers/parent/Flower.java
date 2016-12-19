@@ -7,7 +7,7 @@ import Flowers.enums.FlowerSmell;
  * Created by matt on 10/3/16.
  */
 
-public class Flower {
+public abstract class Flower {
     public Specs specs;
     private int freshness;
     private boolean suitable = true;
@@ -40,7 +40,7 @@ public class Flower {
     public Specs getSpecs(){
         return this.specs;
     }
-
+    public abstract float getTotalPrice();
 
 }
 

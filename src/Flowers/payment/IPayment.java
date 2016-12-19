@@ -1,5 +1,5 @@
 package Flowers.payment;
 
 public interface IPayment {
-    public boolean pay(int price);
+    public boolean pay(double price);
 }

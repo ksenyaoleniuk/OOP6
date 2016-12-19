@@ -63,7 +63,7 @@ class Boquet{
     public int getPrice(){
         int sum = 0;
         for (Flower item: flowers){
-            sum += item.getPrice();
+            sum += item.getTotalPrice();
         }
         return sum;
     }
