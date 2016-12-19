@@ -7,10 +7,10 @@ public class RibbonDecorator extends ItemDecorator {
     public RibbonDecorator(Item item){
         super(item);
     }
-    public double getTotalPrice(){
-        return (30 + getItem().getTotalPrice());
+    public int price(){
+        return (300 + getItem().price());
     }
     public String getDescription(){
         return item.getDescription();
     }
-}
+    }

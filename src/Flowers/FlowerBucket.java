@@ -52,13 +52,17 @@ public class FlowerBucket implements Item {
         return toString();
     }
 
-    public double getTotalPrice() {
-        double sum = 0;
+    @Override
+    public int price() {
+        int sum = 0;
         for (int i = 0; i < insertIndex; i ++) {
             sum += a[i].getPrice();
         }
         return sum;
     }
+
+
+
     public Flower[] selectFlowersByItsLength(double start, double end) {
         int tmpSize = 0;
         for (int i = 0; i < insertIndex; i++) {
@@ -73,8 +77,10 @@ public class FlowerBucket implements Item {
                 tmpPart[tmpIndex] = a[i];
                 tmpIndex++;
             }
-        }return tmpPart;
-    }
+        }return tmpPart;}
+
+
+//????
 
     public Flower searchFlower(Flower flower){
         ArrayList<Flower> tmp = new ArrayList<Flower>();

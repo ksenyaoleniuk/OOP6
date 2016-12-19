@@ -8,10 +8,12 @@ public class BasketDecorator extends ItemDecorator{
     public BasketDecorator(Item item){
         super(item);
     }
-    public double getTotalPrice(){
-        return (5 + getItem().getTotalPrice());
-    }
     public String getDescription(){
         return item.getDescription();
+    }
+
+    @Override
+    public int price() {
+        return (5 + getItem().price());
     }
 }

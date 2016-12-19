@@ -1,15 +1,13 @@
 package Flowers.observers;
 
-import Flowers.MyObservable;
+import Flowers.Observable;
 import Flowers.Observer;
-
-import java.util.Observable;
 
 /**
  * Created by olenyuk on 21.11.2016.
  */
 public class RomashkaSupplierObserver extends Observer {
-    public RomashkaSupplierObserver(MyObservable subject) {
+    public RomashkaSupplierObserver(Observable subject) {
         subject.attach(this);
     }
 

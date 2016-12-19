@@ -14,7 +14,6 @@ public class FlowerMain {
     public static void main(String args[]) {
         ArrayList<Flower> flowers = new ArrayList<>(Arrays.asList(
                 new Cactus(20, 1, FlowerColour.GREEN, 13,true),
-
                 new Cactus(20, 2, FlowerColour.GREEN, 12, false),
                 new Chamomille(15, 5, FlowerColour.RED, 20,20),
                 new Chamomille(15, 3, FlowerColour.PINK, 21,21)
