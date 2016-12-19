@@ -2,6 +2,7 @@ package Flowers;
 
 import Flowers.enums.CactusForm;
 import Flowers.enums.FlowerColour;
+import Flowers.enums.FlowerType;
 import Flowers.parent.Flower;
 import Flowers.parent.Specs;
 import Flowers.specs.CactusSpec;
@@ -10,7 +11,7 @@ import Flowers.specs.CactusSpec;
  * Created by olenyuk on 24.10.2016.
  */
 public class Cactus extends Flower {
-
+    String type = "Cactus";
     public Cactus(Specs specs, int fresheness) {
         super(specs, fresheness);
     }
@@ -27,5 +28,8 @@ public class Cactus extends Flower {
         else{
             return 200.0f;
         }
+    }
+    public String getType(){
+        return type;
     }
 }

@@ -12,22 +12,10 @@ import Flowers.specs.FlowerSpec;
  */
 public class BirthdayBucket extends FlowerBucket{
     public BirthdayBucket(){
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
-        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.GREEN, 20, FlowerSmell.GOOD), 20));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.GREEN, 20, FlowerSmell.GOOD), 20));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.GREEN, 20, FlowerSmell.GOOD), 20));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.GREEN, 20, FlowerSmell.GOOD), 20));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.GREEN, 20, FlowerSmell.GOOD), 20));
 
-}}
+    }}

@@ -9,6 +9,7 @@ import Flowers.specs.FlowerSpec;
  * Created by olenyuk on 19.12.2016.
  */
 public class Rose extends Flower {
+    String type = "ROSE";
     public Rose(Specs specs, int freshness){
         super(specs, freshness);
     }
@@ -23,6 +24,9 @@ public class Rose extends Flower {
             return lenght * 3.0f + 30;}
         else{
             return lenght * 3.0f + 10;}
+    }
+    public String getTYpe(){
+        return type;
     }
 
 }
