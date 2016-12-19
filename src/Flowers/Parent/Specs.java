@@ -1,22 +1,22 @@
 package Flowers.parent;
 import Flowers.enums.FlowerColour;
 import Flowers.enums.FlowerSmell;
-import Flowers.enums.FlowerType;
+//import Flowers.enums.FlowerType;
 public  class Specs {
     protected FlowerColour colour;
     protected int height;
-    protected FlowerType type;
+//    protected FlowerType type;
     protected FlowerSmell smell;
 
-    public Specs(FlowerColour colour, int height,FlowerType type, FlowerSmell smell){
+    public Specs(FlowerColour colour, int height, FlowerSmell smell){
         this.height = height;
         this.colour = colour;
-        this.type = type;
+//        this.type = type;
         this.smell = smell;
     }
 
-    public Specs(FlowerColour colour, int height, FlowerSmell smell) {
-    }
+//    public Specs(FlowerColour colour, int height, FlowerSmell smell) {
+//    }
     public FlowerSmell getSmell(){return smell;}
     public int getLength(){
         return height;
@@ -24,7 +24,7 @@ public  class Specs {
 
     public FlowerColour getColour(){return colour;}
 
-    public FlowerType getType(){return type;}
+//    public FlowerType getType(){return type;}
 
     public boolean match(Specs specs){
         if (specs.height != this.height){
@@ -33,9 +33,9 @@ public  class Specs {
         if (specs.colour != this.colour){
             return false;
         }
-        if (specs.type != this.type){
-            return false;
-        }
+//        if (specs.type != this.type){
+//            return false;
+//        }
         return true;
     }
 }
