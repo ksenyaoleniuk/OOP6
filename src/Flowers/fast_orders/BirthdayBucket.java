@@ -12,6 +12,22 @@ import Flowers.specs.FlowerSpec;
  */
 public class BirthdayBucket extends FlowerBucket{
     public BirthdayBucket(){
-        addFlower(new Rose(new FlowerSpec((FlowerColour.PINK , 20, FlowerSmell.SWEET, FlowerType.ROSE), 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
+        addFlower(new Rose(new FlowerSpec(FlowerColour.PINK, 20, FlowerType.ROSE, FlowerSmell.SWEET) , 100));
 
 }}
