@@ -6,14 +6,13 @@ import java.util.Random;
 
 
 public class PostDeliveryStrategy implements IDelivery {
-    public boolean deliver(ArrayList<Item> items) {
-        Random rndGenerator = new Random();
-        boolean[] newLst = {true, false};
-        return newLst[rndGenerator.nextInt(1)];
-    }
-
-    @Override
     public boolean deliver(LinkedList<Item> items) {
-        return false;
-    }
-}
+        if (items.size() != 0) {
+            System.out.println("Sending order by post");
+            for (Item item : items) {
+                item.getDescription();
+
+            }
+            return true;
+        }
+        return false;}}

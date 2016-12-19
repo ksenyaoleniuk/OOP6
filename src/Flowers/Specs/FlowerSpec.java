@@ -12,4 +12,5 @@ public class FlowerSpec extends Specs {
     public FlowerSpec(FlowerColour colour, int height, FlowerType type, FlowerSmell smell) {
         super(colour, height, type, smell);
     }
+
 }

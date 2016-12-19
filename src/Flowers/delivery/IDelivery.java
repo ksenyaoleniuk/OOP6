@@ -7,6 +7,6 @@ import java.util.LinkedList;
 
 
 public interface IDelivery {
-    public boolean deliver(LinkedList<Item> items);
+    boolean deliver(LinkedList<Item> items);
 
 }

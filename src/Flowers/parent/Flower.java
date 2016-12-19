@@ -8,27 +8,22 @@ import Flowers.enums.FlowerSmell;
  */
 
 public class Flower {
-    protected Specs spec;
-    private double price;
+    public Specs specs;
     private int freshness;
-    private int height;
-    private FlowerSmell smell;
     private boolean suitable = true;
-    public Flower(int fresheness, int height, FlowerColour colour, double price, FlowerSmell smell){
-        this.price = price;
+    public Flower(Specs specs, int fresheness){
         this.freshness = fresheness;
-        this.spec = new Specs(colour, height, smell);
-        this.smell = smell;
+        this.specs = specs;
+
 
     }
     public FlowerColour getColour(){
-        return spec.colour;    }
+        return specs.colour;    }
     public int getLenght(){
-        return spec.height;
+        return specs.height;
     }
-    public double getPrice(){
-        return price;
-
+    public FlowerSmell getSmell(){
+        return specs.smell;
     }
     public int getFreshness(){
         return freshness;
@@ -43,7 +38,7 @@ public class Flower {
 
     }
     public Specs getSpecs(){
-        return this.spec;
+        return this.specs;
     }
 
 
