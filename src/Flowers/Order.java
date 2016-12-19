@@ -12,7 +12,7 @@ import Flowers.MyObservable;
 /**
  * Created by olenyuk on 21.11.2016.
  */
-public class Order extends MyObservable{
+public class Order implements MyObservable{
     LinkedList<Item>  linkedlist = new LinkedList<Item>();
     IPayment payment;
     IDelivery delivery;

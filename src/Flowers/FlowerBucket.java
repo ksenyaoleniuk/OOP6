@@ -82,17 +82,15 @@ public class FlowerBucket implements Item {
 
 //????
 
-    public Flower searchFlower(Flower flower){
+    public ArrayList<Flower> searchFlower(Specs spec){
         ArrayList<Flower> tmp = new ArrayList<Flower>();
         for (int i = 0; i < insertIndex; i++) {
-            if (a[i].getColour() != flower.getColour())
+            if (!a[i].getSpecs().match(spec)){
                 continue;
-
-            if (a[i].getLenght() != flower.getLenght())
-                continue;
-                return a[i];
             }
+            tmp.add(a[i]);
+        }
 
-        return null;
+        return tmp;
     }
 }

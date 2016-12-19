@@ -8,5 +8,5 @@ import java.util.LinkedList;
  */
 public interface MyObservable{
 
-public void attach(Observer observer);
-public void notifyAllObservers();}
+        void attach(Observer observer);
+        void notifyAllObservers();}
